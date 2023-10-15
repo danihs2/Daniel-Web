@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+
+.parent{
+    margin: 30px auto;
+    width: 350px;
+    padding: 1em;
+    background-color: indigo;
+    /*
+    Si en el padre se coloca position absolute, TRBL van a afectar para los hijos pero
+    adentro del parent, no en todo el body como en el ejemplo de .absolute igual hay que 
+    agregar absolute en el hijo
+    */
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    text-align: center;
+    color: #fff;
+    padding-top: 1em;
+}
+
+.relative{
+    position: relative; /*Desbloquea 4 propiedades:*/
+    top: 0px; /*Top Right bottom y left, relativo porque lo podemos desplazar desde su posicion original*/
+}
+
+.absolute{
+    background-color: slateblue;
+    position: absolute; 
+    /*Igual agrega top right..., etc. Pero sale del flujo y ahora es un
+    elemento independiente*/
+    top: 0;
+    left: 30; /*Se pone en el TRBL que sea diferente a static
+    como en este caso left 0*/
+}
+
+.fixed{
+    background-color: crimson;
+    position: fixed;
+    /*Lo saca igual del flujo pero lo posiciona en base al navegador
+    pero aqui se queda fijo al navegador (Scroll)*/
+}
