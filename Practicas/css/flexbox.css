@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+}
+
+.container{
+    width: 90%;
+    height: 500px;
+    margin: 40px auto;
+    outline: 4px solid black;
+
+    display: flex;
+    /*Los elementos adentro de 
+    .container son elementos directos
+    flexitems
+    .container tiene propiedad
+    nueva flexdirection*/
+    flex-direction: row;/*Defecto row*/
+    /*flex-direction: column; Los hace en forma de columna
+    crossaxis es de izquierda a derecha en row, en colum es de arriba a abajo*/
+    flex-wrap: wrap;
+    /*Flex wrap, si hay desborde lo pasa abajo los demas items directos*/
+    justify-content: space-evenly;
+    /*justify por defecto es start, es cómo los va a justificar los elementos
+    flex-start, flex-end, center, space-between, space-around, space-evenly*/
+    align-items: center;
+    /*Los posiciona pero en el crossaxis
+    strech, flex-start, flex-end, center, baseline*/
+    align-content: flex-start;
+    /*Es como aling items pero los junta (Solo cuando son dos filas)*/
+}
+
+.child{
+    width: 90px;
+    height: 90px;
+
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.child--1{
+    background-color: indigo;
+}
+
+.child--2{
+    background-color: deeppink;
+}
+
+.child--3{
+    background-color: royalblue;
+}
+
+.child--4{
+    background-color: seagreen;
+}
