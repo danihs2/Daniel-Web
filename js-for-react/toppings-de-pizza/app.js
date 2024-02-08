@@ -51,6 +51,8 @@ losToppings[3].addEventListener('click', () => {
     enlaces[0].classList.toggle('clase-1');
 });
 
+//Agregar un elemento a la pagina
+
 const toppingNuevo = document.createElement('li');
 toppingNuevo.classList.add('topping', 'fondo-marron');
 toppingNuevo.innerText = 'Topping nuevo';
