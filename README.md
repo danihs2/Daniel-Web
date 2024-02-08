@@ -1,2 +1,2 @@
 # Daniel-Web
-Danien web es una pagina donde subo practicas de desarrollo frontend y backend
+Danien web es un repositorio donde subo practicas de desarrollo frontend y backend
