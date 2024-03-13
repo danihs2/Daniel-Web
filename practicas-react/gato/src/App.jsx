@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
 import confetti from 'canvas-confetti'
 import { Square } from './components/Square.jsx'
@@ -52,7 +52,7 @@ function App() {
     window.localStorage.removeItem('board');
     window.localStorage.removeItem('turn');
   }
-  
+
   return (
     <main className='board'>
       <h1>Gato</h1>
